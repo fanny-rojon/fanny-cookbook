@@ -8,7 +8,6 @@
 }
 
 .button {
-  color: $white;
   font-size: 14px;
   padding: 10px 20px;
   text-decoration: none;
@@ -16,12 +15,23 @@
   margin-right: 10px;
 }
 
+.side-links a {
+  background-color: $white;
+  color: $dark-gray;
+  &:hover {
+  background-color: $white-transparent;
+    // color: $white;
+  }
+}
+
 .raspberry-transparent {
   background-color: $raspberry-transparent;
+  color: $white;
 }
 
 .yellow-transparent {
   background-color: $yellow-transparent;
+  color: $white;
 }
 
 
