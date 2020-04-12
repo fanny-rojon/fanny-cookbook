@@ -1,0 +1,13 @@
+nav {
+  padding: 15px 20px;
+  background-color: $white-transparent;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  color: $white;
+}

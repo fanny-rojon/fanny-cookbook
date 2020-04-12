@@ -4,7 +4,7 @@
     <title>Fanny's Cookbook</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= favicon_link_tag asset_path('favicon.png') %>
+    <%= favicon_link_tag asset_path('herbario.png') %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,8 +13,17 @@
 
   <body>
     <nav>
+      <div class="logo">
       <%= link_to "cookbook", root_path, class: "logo" %>
+      </div>
+      <div class="side-links">
+        <%= link_to "Browse by Category", root_path, class: "button yellow-transparent" %>
+        <%= link_to "Browse by Ingredient", root_path, class: "button raspberry-transparent" %>
+      </div>
     </nav>
     <%= yield %>
+    <footer>
+      <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
+    </footer>
   </body>
 </html>

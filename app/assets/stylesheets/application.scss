@@ -2,9 +2,12 @@
 @import "config/fonts";
 @import "config/colors";
 
-// External libraries
-
-
 // Your CSS partials
 @import "components/index";
+@import "pages";
 
+
+body {
+  font-family: $body-font;
+  color: $dark-gray;
+}
