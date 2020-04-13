@@ -1,36 +1,26 @@
-.button-light {
-  background-color: $white;
-  color: $dark-gray;
-  font-size: 14px;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
 .home-button {
-  font-size: 14px;
-  padding: 15px 30px;
+  font-size: 22px;
   border-radius: 5px;
-  margin: 10px;
+  padding: 20px 35px;
 }
 
 .button-white {
-  background-color: $white;
-  color: $dark-gray;
-  &:hover {
   background-color: $white-transparent;
-    // color: $white;
+  color: $dark-gray;
+  margin-top: 100px;
+}
+
+@media screen and (min-width: 1000px) {
+  .home-button {
+    font-size: 14px;
+    padding: 15px 30px;
+    margin: 10px;
+  }
+  .button-white {
+    background-color: $white;
+    &:hover {
+    background-color: $white-transparent;
+    }
   }
 }
-
-.raspberry-transparent {
-  background-color: $raspberry-transparent;
-  color: $white;
-}
-
-.yellow-transparent {
-  background-color: $yellow-transparent;
-  color: $white;
-}
-
 

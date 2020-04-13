@@ -9,21 +9,35 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-position: center;
 }
 
 .home-links {
   height: 100vh;
   display: flex;
-  // flex-direction: column;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding-top: 100px;
 }
-
 
 .home-links a {
   text-decoration: none;
 }
 
+.buffer {
+    height: 100px;
+  }
 
-
+@media screen and (min-width: 1000px) {
+  .home-links {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+  }
+  .buffer {
+    height: 0;
+  }
+}
 // Photo by Brooke Lark on Unsplash
