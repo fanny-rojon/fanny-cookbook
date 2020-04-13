@@ -12,11 +12,19 @@
   </head>
 
   <body>
+    <% if controller.controller_name == "pages" && controller.action_name == "home" %>
     <nav>
       <div class="home-logo">
-      <%= link_to "cookbook", root_path, class: "logo" %>
+      <%= link_to "cookbook", root_path, class: "logo logo-white" %>
       </div>
     </nav>
+    <% else %>
+      <nav>
+        <div class="home-logo">
+        <%= link_to "cookbook", root_path, class: "logo logo-black" %>
+        </div>
+      </nav>
+    <% end %>
     <%= yield %>
     <footer>
       <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>

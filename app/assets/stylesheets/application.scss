@@ -1,3 +1,5 @@
+@import "bootstrap/scss/bootstrap";
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -5,9 +7,17 @@
 // Your CSS partials
 @import "components/index";
 @import "pages";
+@import "ingredients";
+@import "categories";
 
 
 body {
+  margin: 0 auto;
   font-family: $body-font;
-  color: $dark-gray;
+  color: $black;
+  background-color: $light-gray;
+}
+
+.container {
+  margin-top: 100px;
 }

@@ -1,27 +1,14 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-body {
-  margin: 0 auto;
-  background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1586716613/header_xfyrza.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: center;
-}
 
 .home-links {
   height: 100vh;
+  background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1586716613/header_xfyrza.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding-top: 100px;
-}
-
-.home-links a {
   text-decoration: none;
 }
 

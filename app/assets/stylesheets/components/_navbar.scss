@@ -8,7 +8,25 @@ nav {
   text-decoration: none;
   font-size: 40px;
   font-weight: lighter;
+  // color: $white;
+  &:hover {
+    text-decoration: none;
+    // color: $white;
+  }
+}
+
+.logo-white {
   color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+.logo-black {
+  color: $black;
+  &:hover {
+    color: $black;
+  }
 }
 
 // @media (min-width: 640px) and (max-width: 767px) {
