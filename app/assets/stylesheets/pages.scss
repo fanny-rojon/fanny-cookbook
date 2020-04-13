@@ -11,10 +11,18 @@ body {
   background-size: cover;
 }
 
+.home-links {
+  height: 100vh;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
-
-
+.home-links a {
+  text-decoration: none;
+}
 
 
 

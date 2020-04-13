@@ -1,8 +1,10 @@
 nav {
   padding: 15px 20px;
-  background-color: $white-transparent;
-  display: flex;
-  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  // background-color: $white-transparent;
+  // display: flex;
+  // justify-content: space-between;
 }
 
 .logo {
