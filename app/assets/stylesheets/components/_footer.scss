@@ -2,8 +2,13 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  // padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   background-color: $white-transparent;
   font-size: 12px;
+  opacity: 0.8;
+}
+
+footer p {
+  margin: 0;
 }
