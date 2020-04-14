@@ -1,0 +1,25 @@
+.category-full-card a:hover {
+  text-decoration: none;
+}
+
+.category-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-details {
+  color: $black;
+  background-color: $white;
+  padding: 10px;
+}
+
+.category-details h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.category-details p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin: 0;
+}
