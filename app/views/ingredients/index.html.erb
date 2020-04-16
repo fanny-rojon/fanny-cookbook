@@ -1,7 +1,6 @@
 <div class="container">
-  <h1>Ingredients</h1>
-  <% @ingredients.each do |ingredient| %>
-  <%= ingredient.name %>
-  <%= cl_image_tag ingredient.photo.key, height: 300, width: 400, crop: :fill %>
-  <% end %>
+  <!-- <h1>Categories</h1> -->
+  <div class="grid-wrapper">
+    <%= render @ingredients  %>
+  </div>
 </div>

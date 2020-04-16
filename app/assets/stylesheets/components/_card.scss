@@ -1,25 +1,35 @@
-.category-full-card a:hover {
+.full-card {
+}
+
+.full-card a:hover {
   text-decoration: none;
 }
 
-.category-card img {
+.card {
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  border-radius: 4px 4px 0 0;
   height: 200px;
+  width: 100%;
   object-fit: cover;
 }
 
-.category-details {
+.details {
   color: $black;
   background-color: $white;
   padding: 10px;
 }
 
-.category-details h2 {
+.details h2 {
   font-size: 16px;
   margin: 0;
 }
 
-.category-details p {
+.details p {
   font-size: 12px;
   opacity: 0.8;
   margin: 0;
 }
+

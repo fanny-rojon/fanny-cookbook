@@ -1,9 +1,9 @@
 <div class="full-card">
-  <%= link_to category_path(category) do %>
+  <%= link_to ingredient_path(ingredient) do %>
     <div class="card">
-      <%= cl_image_tag category.photo.key %>
+      <%= cl_image_tag ingredient.photo.key %>
       <div class="details">
-        <h2><%= category.name %></h2>
+        <h2><%= ingredient.name %></h2>
         <p>18 recipes</p>
       </div>
     </div>

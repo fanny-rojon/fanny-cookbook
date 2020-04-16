@@ -21,6 +21,16 @@ class CategoriesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    @category = Category.find(params[:id])
+    @category.update(category_params)
+    # no need for app/views/categorys/update.html.erb
+    redirect_to category_path(@category)
+  end
+
   private
 
   def set_category
