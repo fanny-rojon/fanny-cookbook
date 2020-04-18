@@ -1,7 +1,4 @@
 .whole-card {
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  // clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-  // border-radius: 0 50px 0 0;
 }
 
 .whole-card a:hover {
@@ -9,11 +6,9 @@
 }
 
 .complete-card {
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .complete-card img {
-  // border-radius: 0 50px 0 0;
   clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   height: 350px;
   width: 100%;
