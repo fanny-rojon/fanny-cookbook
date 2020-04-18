@@ -7,6 +7,11 @@
 .website-nav {
   padding: 15px 20px;
   display: flex;
+  align-items: center;
+  // background-color: $light-gray;
+  background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1587242500/header_nav_oussxv.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .navigation {
