@@ -4,14 +4,20 @@
   top: 0;
 }
 
+// .navbar-parent {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+// }
+
 .website-nav {
   padding: 15px 20px;
   display: flex;
   align-items: center;
-  // background-color: $light-gray;
-  background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1587242500/header_nav_oussxv.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: $light-gray;
+  // background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1587243200/header_nav_2_e5wdbw.jpg");
+  // background-size: cover;
+  // background-position: center;
 }
 
 .navigation {

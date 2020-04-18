@@ -23,15 +23,17 @@
       <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
     </footer>
     <% else %>
-      <nav class="website-nav">
-        <div class="home-logo">
-        <%= link_to "cookbook", root_path, class: "logo logo-black" %>
-        </div>
-        <div class="navigation">
-        <%= link_to "browse categories", categories_path, class: "website-button button-white" %>
-        <%= link_to "browse ingredients", ingredients_path, class: "website-button button-white" %>
-        </div>
-      </nav>
+      <div class="navbar-parent">
+        <nav class="website-nav">
+          <div class="home-logo">
+          <%= link_to "cookbook", root_path, class: "logo logo-black" %>
+          </div>
+          <div class="navigation">
+          <%= link_to "browse categories", categories_path, class: "website-button button-white" %>
+          <%= link_to "browse ingredients", ingredients_path, class: "website-button button-white" %>
+          </div>
+        </nav>
+      </div>
       <%= yield %>
       <footer class="website-footer">
         <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
