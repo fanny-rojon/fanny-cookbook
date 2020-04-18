@@ -18,16 +18,24 @@
       <%= link_to "cookbook", root_path, class: "logo logo-white" %>
       </div>
     </nav>
+    <%= yield %>
+    <footer class="home-footer">
+      <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
+    </footer>
     <% else %>
       <nav>
         <div class="home-logo">
         <%= link_to "cookbook", root_path, class: "logo logo-black" %>
         </div>
+        <div class="navigation">
+        <%#= link_to "categories", root_path, class: "button button-color" %>
+        <%#= link_to "ingredients", root_path, class: "button button-color" %>
+        </div>
       </nav>
+      <%= yield %>
+      <footer class="website-footer">
+        <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
+      </footer>
     <% end %>
-    <%= yield %>
-    <footer>
-      <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
-    </footer>
   </body>
 </html>
