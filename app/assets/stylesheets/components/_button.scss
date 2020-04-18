@@ -11,6 +11,26 @@
   text-decoration: none;
 }
 
+.website-button {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-weight: lighter;
+  &:hover {
+    text-decoration: none;
+    color: $black;
+  }
+}
+
+.button-color {
+  background-color: $light-gray;
+  color: $black;
+  margin-top: 100px;
+  text-decoration: none;
+}
+
+
 @media screen and (min-width: 1000px) {
   .home-button {
     font-size: 14px;

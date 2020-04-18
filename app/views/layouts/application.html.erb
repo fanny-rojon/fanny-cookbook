@@ -13,7 +13,7 @@
 
   <body>
     <% if controller.controller_name == "pages" && controller.action_name == "home" %>
-    <nav>
+    <nav class="home-nav">
       <div class="home-logo">
       <%= link_to "cookbook", root_path, class: "logo logo-white" %>
       </div>
@@ -23,13 +23,13 @@
       <p>Copyright Fanny's Cookbook© 2020 | All Rights Reserved.</p>
     </footer>
     <% else %>
-      <nav>
+      <nav class="website-nav">
         <div class="home-logo">
         <%= link_to "cookbook", root_path, class: "logo logo-black" %>
         </div>
         <div class="navigation">
-        <%#= link_to "categories", root_path, class: "button button-color" %>
-        <%#= link_to "ingredients", root_path, class: "button button-color" %>
+        <%= link_to "browse categories", categories_path, class: "website-button button-color" %>
+        <%= link_to "browse ingredients", ingredients_path, class: "website-button button-color" %>
         </div>
       </nav>
       <%= yield %>

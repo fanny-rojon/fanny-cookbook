@@ -1,12 +1,21 @@
-nav {
+.home-nav {
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+}
+
+.website-nav {
   padding: 15px 20px;
   display: flex;
-  justify-content: center;
+}
+
+.navigation {
+  margin-left: auto;
 }
 
 .logo {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: lighter;
   // color: $white;
   &:hover {
@@ -29,22 +38,6 @@ nav {
   }
 }
 
-// @media (min-width: 640px) and (max-width: 767px) {
-//   .logo {
-//     text-decoration: none;
-//     font-size: 40px;
-//     font-weight: lighter;
-//     color: red;
-//   }
-// }
-
 @media screen and (min-width: 1000px) {
-  nav {
-    padding: 15px 20px;
-    position: fixed;
-    top: 0;
-  }
-  .logo {
-    font-size: 20px;
-  }
+
 }
