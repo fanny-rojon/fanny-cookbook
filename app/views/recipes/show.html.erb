@@ -20,7 +20,7 @@
       <% if @recipe.people.nil? %>
         <p class="show-ingredients">Ingredients:</p>
       <% else %>
-      <p class="show-ingredients">Ingredients: <span class="lighter">(pour <%= @recipe.people %> personnes)</span> </p>
+      <p class="show-ingredients">Ingredients: <span class="lighter">(for <%= @recipe.people %> people)</span> </p>
         <% end %>
       <ul class="lighter">
         <% @recipe.ingredients_list.split("\r\n").each do |ingredient| %>

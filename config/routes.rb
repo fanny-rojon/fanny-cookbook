@@ -4,4 +4,5 @@ Rails.application.routes.draw do
 
   resources :categories, only: %i[index show new create edit update]
   resources :ingredients, only: %i[index show new create edit update]
+  resources :recipes, only: %i[show new create edit update]
 end
