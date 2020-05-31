@@ -6,6 +6,8 @@ class IngredientsController < ApplicationController
   end
 
   def show
+    @recipes = Recipe.where(ingredient: @ingredient).order(:name)
+    @recipe = Recipe.last
   end
 
   def new
