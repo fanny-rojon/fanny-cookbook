@@ -1,0 +1,43 @@
+<%= content_for :meta_title, @recipe.name %>
+
+<div class="recipe-header">
+  <h1 class="recipe-title"><%= @recipe.name %> </h1>
+  <p class="recipe-author lighter">de <%= @recipe.author %></p>
+</div>
+<div class="container">
+  <div class="recipe-block">
+    <div class="recipe-block-image d-none d-md-block">
+      <% if @recipe.photo.attached? %>
+        <%= cl_image_tag @recipe.photo.key %>
+        <% else %>
+        <%= cl_image_tag("placeholder_gysyia") %>
+        <% end %>
+      <p></p>
+    </div>
+    <div class="recipe-block-details">
+      <%= link_to @recipe.category.name, category_path(@recipe.category), class: "nav-link website-button button-color" %>
+      <p class="show-prep-time">Temps de Préparation: <span class="lighter"><%= @recipe.prep_time %></span></p>
+      <% if @recipe.people.nil? %>
+        <p class="show-ingredients">Ingrédients:</p>
+      <% else %>
+      <p class="show-ingredients">Ingrédients: <span class="lighter">(pour <%= @recipe.people %> personnes)</span> </p>
+        <% end %>
+      <ul class="lighter">
+        <% @recipe.ingredients_list.split("\r\n").each do |ingredient| %>
+        <li><%= ingredient %></li>
+        <% end %>
+      </ul>
+      <p class="show-preparation">Préparation:</p>
+      <ul class="lighter">
+        <% @recipe.preparation.split("\r\n").each do |step| %>
+        <li><%= step %></li>
+        <% end %>
+      </ul>
+      <% if @recipe.source.nil? || @recipe.source == "" %>
+        <p></p>
+      <% else %>
+        <p>Source: <span class="lighter"><%= @recipe.source %></span> </p>
+      <% end %>
+    </div>
+  </div>
+</div>
