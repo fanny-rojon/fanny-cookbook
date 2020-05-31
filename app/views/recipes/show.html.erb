@@ -16,18 +16,18 @@
     </div>
     <div class="recipe-block-details">
       <%= link_to @recipe.category.name, category_path(@recipe.category), class: "nav-link website-button button-color" %>
-      <p class="show-prep-time">Temps de Préparation: <span class="lighter"><%= @recipe.prep_time %></span></p>
+      <p class="show-prep-time">Prep time: <span class="lighter"><%= @recipe.prep_time %></span></p>
       <% if @recipe.people.nil? %>
-        <p class="show-ingredients">Ingrédients:</p>
+        <p class="show-ingredients">Ingredients:</p>
       <% else %>
-      <p class="show-ingredients">Ingrédients: <span class="lighter">(pour <%= @recipe.people %> personnes)</span> </p>
+      <p class="show-ingredients">Ingredients: <span class="lighter">(pour <%= @recipe.people %> personnes)</span> </p>
         <% end %>
       <ul class="lighter">
         <% @recipe.ingredients_list.split("\r\n").each do |ingredient| %>
         <li><%= ingredient %></li>
         <% end %>
       </ul>
-      <p class="show-preparation">Préparation:</p>
+      <p class="show-preparation">Prep:</p>
       <ul class="lighter">
         <% @recipe.preparation.split("\r\n").each do |step| %>
         <li><%= step %></li>
