@@ -1,6 +1,13 @@
+<%= content_for :meta_title, @ingredient.name %>
+
+<div class="website-header">
+  <h1 class="index-title"><%= @ingredient.name %></h1>
+</div>
 <div class="container">
-  <div class="ingredient-header">
-  <h1><%= @ingredient.name %></h1>
-  <%= cl_image_tag @ingredient.photo.key, height: 500, width: 500, crop: :fill %>
+  <div class="recipe-grid-wrapper">
+  <% @recipes.each do |recipe| %>
+    <%= render 'recipe', recipe: recipe %>
+  <% end %>
   </div>
 </div>
+
