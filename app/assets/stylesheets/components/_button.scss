@@ -29,6 +29,19 @@
   }
 }
 
+.button-grey {
+  background-color: $light-gray;
+  color: $black;
+  // margin-top: 100px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: none;
+  &:hover {
+  color: $white;
+  background-color: $white-transparent;
+  text-decoration: none;
+  }
+}
 .website-button {
   font-size: 14px;
   border-radius: 5px;

@@ -1,3 +1,77 @@
 // Place all the styles related to the recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.recipe-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: $light-gray;
+  padding: 10px 0;
+  // background: url("https://res.cloudinary.com/fannylikescoffee/image/upload/v1586716613/header_xfyrza.jpg") no-repeat center center fixed;
+  // background-size: cover;
+  // background-position: center;
+}
+
+.recipe-title {
+  font-size: 26px;
+  font-weight: lighter;
+  margin: 0;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.recipe-author {
+  opacity: 0.8;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.recipe-block {
+  display: flex;
+  padding-top: 15px;
+  // margin-bottom: 30px;
+}
+
+.recipe-block-image {
+  // height: 846px;
+  min-width: 564px;
+  max-width: 564px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.recipe-block-image img {
+  // min-height: 846px;
+  // max-height: 846px;
+  min-width: 100%;
+  max-width: 100%;
+  // display: block;
+}
+
+.recipe-block-details {
+  // max-width: 650px;
+  // min-width: 650px;
+}
+
+.new-recipe-block {
+  display: flex;
+}
+
+.new-recipe-block-image {
+  // height: 100%;
+  // width: 50%;
+}
+
+.recipe-block-details {
+  background-color: $white;
+  padding: 30px;
+}
+
+.show-name {
+  font-size: 26px;
+}
+
