@@ -4,7 +4,7 @@
   <h1 class="index-title"><%= @category.name %></h1>
 </div>
 <div class="container">
-  <div class="recipe-grid-wrapper">
+  <div class="grid-wrapper">
   <% @recipes.each do |recipe| %>
     <%= render 'recipe', recipe: recipe %>
   <% end %>
