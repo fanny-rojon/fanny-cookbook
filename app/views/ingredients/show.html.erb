@@ -4,8 +4,11 @@
   <h1 class="index-title"><%= @ingredient.name %></h1>
 </div>
 <% if user_signed_in? %>
-  <%= link_to "new recipe", new_recipe_path, class: "website-button button-white" %>
-  <%= link_to "edit ingredient", edit_ingredient_path, class: "website-button button-white" %>
+  <div class="margin-links">
+    <%= link_to "new ingredient", new_ingredient_path, class: "website-button button-white" %>
+    <%= link_to "edit ingredient", edit_ingredient_path, class: "website-button button-white" %>
+    <%= link_to "new recipe", new_recipe_path, class: "website-button button-white" %>
+  </div>
 <% end %>
 <div class="container">
   <div class="grid-wrapper">
