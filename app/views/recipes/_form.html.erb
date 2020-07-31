@@ -1,6 +1,7 @@
 <%= simple_form_for(@recipe) do |f| %>
     <%= f.association :category, collection: Category.order(:name), label: "Category" %>
-    <%= f.association :ingredient, collection: Ingredient.order(:name), label: "Ingredient" %>
+    <%= f.association :ingredients, through: :recipe_ingredients, as: :check_boxes, label: "Ingredient" %>
+    <%#= f.association :ingredient, as: :radio_buttons, collection: Ingredient.order(:name), label: "Ingredient" %>
     <%#= f.association :category, collection: Category.all(order: 'name') %>
     <%= f.input :name, label: "Recipe Name" %>
     <%= f.input :prep_time, label: "Prep time" %>

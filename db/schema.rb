@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_31_190826) do
+ActiveRecord::Schema.define(version: 2020_07_31_193236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,18 +48,25 @@ ActiveRecord::Schema.define(version: 2020_07_31_190826) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "recipe_ingredients", force: :cascade do |t|
+    t.bigint "recipe_id"
+    t.bigint "ingredient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["ingredient_id"], name: "index_recipe_ingredients_on_ingredient_id"
+    t.index ["recipe_id"], name: "index_recipe_ingredients_on_recipe_id"
+  end
+
   create_table "recipes", force: :cascade do |t|
     t.string "name"
     t.string "prep_time"
     t.text "ingredients_list"
     t.text "preparation"
     t.bigint "category_id"
-    t.bigint "ingredient_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "source"
     t.index ["category_id"], name: "index_recipes_on_category_id"
-    t.index ["ingredient_id"], name: "index_recipes_on_ingredient_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -75,6 +82,7 @@ ActiveRecord::Schema.define(version: 2020_07_31_190826) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "recipe_ingredients", "ingredients"
+  add_foreign_key "recipe_ingredients", "recipes"
   add_foreign_key "recipes", "categories"
-  add_foreign_key "recipes", "ingredients"
 end

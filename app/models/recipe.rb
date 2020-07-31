@@ -2,7 +2,8 @@ class Recipe < ApplicationRecord
   has_one_attached :photo
 
   belongs_to :category
-  belongs_to :ingredient
+  has_many :recipe_ingredients
+  has_many :ingredients, through: :recipe_ingredients
 
-  validates :name, :prep_time, :ingredients_list, :preparation, :category_id, :ingredient_id, presence: true
+  validates :name, :prep_time, :ingredients_list, :preparation, :category_id, presence: true
 end
