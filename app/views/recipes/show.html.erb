@@ -5,6 +5,7 @@
 </div>
 <% if user_signed_in? %>
   <div class="margin-links">
+    <%= link_to "new recipe", new_recipe_path, class: "website-button button-white" %>
     <%= link_to "edit recipe", edit_recipe_path, class: "website-button button-white margin-bottom" %>
   </div>
 <% end %>
