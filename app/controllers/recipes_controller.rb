@@ -1,6 +1,6 @@
 class RecipesController < ApplicationController
     before_action :set_recipe, only: [:show, :edit]
-    # skip_before_action :authenticate_user!, only: :show
+    skip_before_action :authenticate_user!, only: :show
 
   def index
     @categories = Recipe.order(:name)

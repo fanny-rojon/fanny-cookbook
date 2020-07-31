@@ -1,5 +1,6 @@
 class IngredientsController < ApplicationController
   before_action :set_ingredient, only: [:show, :edit]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @ingredients = Ingredient.order(:name)

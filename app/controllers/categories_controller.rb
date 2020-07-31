@@ -1,5 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit]
+  skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
     @categories = Category.order(:name)
