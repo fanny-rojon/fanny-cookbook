@@ -1,6 +1,9 @@
 <div class="website-header">
   <h1 class="index-title">Browse by Ingredient</h1>
 </div>
+<% if user_signed_in? %>
+  <%= link_to "new ingredient", new_ingredient_path, class: "website-button button-white" %>
+<% end %>
 <div class="container">
   <div class="grid-wrapper">
     <%= render @ingredients  %>
