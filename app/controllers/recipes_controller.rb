@@ -11,6 +11,7 @@ class RecipesController < ApplicationController
 
   def new
     @recipe = Recipe.new
+    # @ingredients = Ingredient.order(:name)
   end
 
   def create
@@ -39,6 +40,6 @@ class RecipesController < ApplicationController
   end
 
   def recipe_params
-    params.require(:recipe).permit(:name, :prep_time, :ingredients_list, :preparation, :category_id, :ingredient_id, :photo, :source)
+    params.require(:recipe).permit(:name, :prep_time, :ingredients_list, :preparation, :category_id, :photo, :source, ingredient_ids: [])
   end
 end

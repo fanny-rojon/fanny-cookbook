@@ -7,8 +7,9 @@ class IngredientsController < ApplicationController
   end
 
   def show
-    @recipes = Recipe.where(ingredient: @ingredient).order(:name)
-    @recipe = Recipe.last
+    @recipes = Recipe.select { |r| r.ingredients.include?(@ingredient) }.sort_by { |r| r[:name] }
+    # @recipes = Recipe.where(ingredient: @ingredient).order(:name)
+    # @recipe = Recipe.last
   end
 
   def new
