@@ -5,5 +5,5 @@ class Recipe < ApplicationRecord
   has_many :recipe_ingredients
   has_many :ingredients, through: :recipe_ingredients
 
-  validates :name, :prep_time, :ingredients_list, :preparation, :category_id, presence: true
+  validates :name, :prep_time, :ingredients_list, :preparation, :category_id, :ingredients, presence: true
 end
