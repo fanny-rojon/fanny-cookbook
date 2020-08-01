@@ -8,7 +8,8 @@
       <% end %>
       <div class="card-details">
         <h2><%= ingredient.name %></h2>
-        <p><%= Recipe.where(ingredient: ingredient).count %> recipes</p>
+        <p><%= ingredient.recipes.count %> recipes</p>
+        <!-- <p><%#= Recipe.where(ingredient: ingredient).count %> recipes</p> -->
       </div>
     </div>
   <% end %>

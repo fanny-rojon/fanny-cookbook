@@ -21,7 +21,7 @@
     </div>
     <div class="recipe-block-details">
       <%= link_to @recipe.category.name, category_path(@recipe.category), class: "website-button button-grey" %>
-      <%= link_to @recipe.ingredient.name, ingredient_path(@recipe.ingredient), class: "website-button button-grey" %>
+      <%#= link_to @recipe.ingredient.name, ingredient_path(@recipe.ingredient), class: "website-button button-grey" %>
       <p class="show-prep-time">Prep time: <span class="lighter"><%= @recipe.prep_time %></span></p>
       <p class="show-ingredients">Ingredients:</p>
       <ul class="lighter">
