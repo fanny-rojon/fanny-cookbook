@@ -20,10 +20,12 @@
       <p></p>
     </div>
     <div class="recipe-block-details">
-      <%= link_to @recipe.category.name, category_path(@recipe.category), class: "website-button button-grey" %>
-      <% @recipe.ingredients.each do |ingredient| %>
-        <%= link_to ingredient.name, ingredient_path(ingredient), class: "website-button button-grey" %>
-      <% end %>
+      <div class="main-links">
+        <%= link_to @recipe.category.name, category_path(@recipe.category), class: "website-button button-grey" %>
+        <% @recipe.ingredients.each do |ingredient| %>
+          <%= link_to ingredient.name, ingredient_path(ingredient), class: "website-button button-grey" %>
+        <% end %>
+      </div>
       <p class="show-prep-time">Prep time: <span class="lighter"><%= @recipe.prep_time %></span></p>
       <p class="show-ingredients">Ingredients:</p>
       <ul class="lighter">
