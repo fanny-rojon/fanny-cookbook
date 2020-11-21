@@ -24,7 +24,7 @@
     <div class="recipe-block-details">
       <div class="main-links">
         <%= link_to @recipe.category.name, category_path(@recipe.category), class: "website-button button-grey" %>
-        <% @recipe.ingredients.first(3).each do |ingredient| %>
+        <% @recipe.ingredients.shuffle.first(3).each do |ingredient| %>
           <%= link_to ingredient.name, ingredient_path(ingredient), class: "website-button button-grey" %>
         <% end %>
       </div>
